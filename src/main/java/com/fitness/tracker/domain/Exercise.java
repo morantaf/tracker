@@ -19,4 +19,8 @@ public class Exercise {
 
     @Column
     private String name;
+
+    public Exercise(String name) {
+        this.name = name;
+    }
 }
