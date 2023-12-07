@@ -16,5 +16,4 @@ public class WorkoutExerciseId implements Serializable {
     private Long workoutId;
     private Long exerciseId;
 
-    // Constructors, getters, setters, equals, and hashCode
 }

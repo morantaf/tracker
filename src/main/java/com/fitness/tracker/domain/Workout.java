@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @Entity
@@ -18,6 +20,15 @@ public class Workout {
     private Long id;
 
     @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
+    @Column
+    private LocalDate date;
+
+    public Workout(User user, LocalDate date) {
+        this.user = user;
+        this.date = date;
+    }
 
 }

@@ -35,4 +35,12 @@ public class WorkoutExercise {
     private String notes;
 
     //TODO: rest time
+
+    public WorkoutExercise(Workout workout, Exercise exercise, Integer set, Integer reps, String notes) {
+        this.workout = workout;
+        this.exercise = exercise;
+        this.set = set;
+        this.reps = reps;
+        this.notes = notes;
+    }
 }
