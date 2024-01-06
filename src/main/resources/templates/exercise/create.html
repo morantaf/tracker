@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new exercise</title>
+</head>
+<body>
+    <h1>Add new exercise</h1>
+    <form action="#" th:action="@{/save}" th:object="${exerciseDTO}" method="post">
+        <p>Name: <input type="text" th:field="*{name}" /></p>
+    </form>
+</body>
+</html>
